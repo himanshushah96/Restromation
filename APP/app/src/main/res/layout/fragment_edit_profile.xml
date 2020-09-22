@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".customer.EditProfileFragment">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    />
+    <androidx.cardview.widget.CardView
+        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:id="@+id/cardview"
+        app:cardBackgroundColor="@color/Background">
+
+        <ImageButton
+            android:layout_width="84dp"
+            android:layout_height="80dp"
+            android:id="@+id/userimagebutton"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:layout_gravity="center|center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_user"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="15dp"
+            android:text="Username"
+            android:textSize="20sp"
+
+            />
+
+
+    </androidx.cardview.widget.CardView>>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/cardview"
+        android:layout_marginTop="20dp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cardElevation="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text=" First Name"
+            android:layout_marginLeft="25dp"
+            android:textSize="17dp"
+            android:drawableLeft="@drawable/ic_portrait_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fisrtnameuser"
+            android:layout_marginLeft="60dp"
+            android:textSize="17dp"
+            android:hint="name"
+            android:fontFamily="monospace"
+            android:layout_marginTop="7dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:id="@+id/viewline"
+                    android:layout_height="1sp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_background_login"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text=" Last Name"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="17dp"
+                    android:drawableLeft="@drawable/ic_portrait_black_24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lastnameuser"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="17dp"
+                    android:hint="name"
+                    android:fontFamily="monospace"
+                    android:layout_marginTop="7dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:id="@+id/viewline1"
+                    android:layout_height="1sp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_background_login"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text=" Email"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="17dp"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emailIdUser"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="17dp"
+                    android:hint="email"
+                    android:fontFamily="monospace"
+                    android:layout_marginTop="7dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:id="@+id/viewline2"
+                    android:layout_height="1sp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_background_login"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text=" Contact Number"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="17dp"
+                    android:drawableLeft="@drawable/ic_portrait_black_24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phoneNumberTV"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="17dp"
+                    android:hint="number"
+                    android:fontFamily="monospace"
+                    android:layout_marginTop="7dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:id="@+id/viewline3"
+                    android:layout_height="1sp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_background_login"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text=" Gender"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="17dp"
+                    android:drawableLeft="@drawable/ic_portrait_black_24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/genderUserTV"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="17dp"
+                    android:hint="gender"
+                    android:fontFamily="monospace"
+                    android:layout_marginTop="7dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:id="@+id/viewline4"
+                    android:layout_height="1sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_background_login"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/button_background_login"
+                    android:text="Update"
+                    android:id="@+id/buttonUpdateProfile"
+                    android:layout_gravity="center"/>
+            </LinearLayout>>
+
+        </androidx.cardview.widget.CardView>>
+</ScrollView>
+    </LinearLayout>>
+
+</RelativeLayout>

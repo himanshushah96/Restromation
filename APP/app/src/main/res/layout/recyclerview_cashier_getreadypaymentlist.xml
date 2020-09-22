@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewCashierGetReadyPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:paddingTop="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView_billIdGRP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Bill id"
+                />
+
+            <TextView
+                android:id="@+id/textView_tableIDGRP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView_billIdGRP"
+                android:text="Table Id"
+                />
+
+
+            <TextView
+                android:id="@+id/textView_FirstNameGRP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/textView_billIdGRP"
+                android:text="FirstName"
+
+                 />
+
+            <TextView
+                android:id="@+id/textView_LastNameGRP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/textView_billIdGRP"
+                android:layout_toRightOf="@id/textView_FirstNameGRP"
+                android:text="LastName"
+                />
+
+            <TextView
+                android:id="@+id/textView_billingAmtGRP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_FirstNameGRP"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Billing Amount"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/textView_paymentTypeGRP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_FirstNameGRP"
+                android:layout_toRightOf="@id/textView_billingAmtGRP"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Payment Type"
+                android:layout_marginBottom="10dp"
+                />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_paymentGRP"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_background_login"
+            android:text="PAY"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

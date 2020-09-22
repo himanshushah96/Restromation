@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer.CustomerTableViewFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F8F8"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello Customer!"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:background="@drawable/mainbackground"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/mainbackground"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Please Choose the capacity for table?"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/mainbackground"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnMinusCapacityTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCapacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                />
+
+            <Button
+                android:id="@+id/btnPlusCapacityTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Button
+
+                android:id="@+id/btnDoneCapacity"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_background_login"
+                android:text="Show Result"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerviewReserveTable"
+            android:layout_weight=".9"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager.AddMenuItem">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:id="@+id/register_form_wrapper"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:id="@+id/register_card"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="230dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="Click to Select Image"
+                        android:textSize="15sp"
+                        android:inputType="none"
+                        android:id="@+id/editText_itemImage"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/ic_image_black_24dp"
+                        />
+
+                    <EditText
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="Item Name"
+                        android:inputType="text"
+                        android:id="@+id/editText_itemName"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/ic_menu_black_24dp"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:hint="Item Price"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/editText_itemPrice"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/ic_order_black_24dp"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:hint="Item Quantity"
+                        android:inputType="number"
+                        android:id="@+id/editText_addQuantity"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/ic_menu_black_24dp"
+                        />
+
+                    <EditText
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="Item Description"
+                        android:inputType="textAutoCorrect"
+                        android:id="@+id/editText_itemDescription"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/ic_order_black_24dp"
+                        />
+
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinner_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="30dp"
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:id="@+id/button_addItem"
+            android:background="@drawable/button_drawable"
+            android:textColor="@color/white"
+            android:text="Add Item"
+            android:layout_gravity="center"
+            android:layout_marginTop="-46dp"
+            android:elevation="15dp"/>
+    </LinearLayout>
+
+    <include layout="@layout/progress_window"/>
+
+   <!-- <EditText
+
+        android:id="@+id/editText_itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Item Name" />
+
+    <EditText
+        android:id="@+id/editText_itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_itemName"
+        android:hint="Enter Item Price"
+        />
+
+    <EditText
+        android:id="@+id/editText_addQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Add Quantity"
+        android:layout_below="@+id/editText_itemPrice"/>
+
+
+    <EditText
+        android:id="@+id/editText_itemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_addQuantity"
+        android:hint="Add Description"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_category"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editText_itemDescription"
+        />
+
+    <Button
+        android:id="@+id/button_addItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_category"
+        android:text="Add Item"/>
+-->
+</RelativeLayout>

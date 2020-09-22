@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".chef.ChefDashboard">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:id="@+id/recyclerViewChefDashboard"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/textViewNoOrders"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/mainbackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<include layout="@layout/progress_window"/>
+</FrameLayout>

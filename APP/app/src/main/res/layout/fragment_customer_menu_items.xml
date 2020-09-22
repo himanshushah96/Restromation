@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".customer.CustomerMenuItemsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayoutcustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/appetizerItemcustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appetizer" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/mainCourseItemcustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Course" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/beverageItemcustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beverage" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/dessertItemcustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dessert" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpagercustomer"
+            android:layout_below="@+id/tablayoutcustomer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            app:navGraph="@navigation/customer_navigation_graph"
+            />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

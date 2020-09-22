@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cashier_navigation_graph"
+    app:startDestination="@id/cashierReadyForPaymentFragment">
+
+    <fragment
+        android:id="@+id/cashierDashboardFragment"
+        android:name="a.m.restaurant_automation.cashier.CashierDashboardFragment"
+        android:label="Completed Payments"
+        tools:layout="@layout/fragment_cashier_dashboard" />
+    <fragment
+        android:id="@+id/cashierMoreItemsFragment"
+        android:name="a.m.restaurant_automation.cashier.CashierMoreItemsFragment"
+        android:label="More Options"
+        tools:layout="@layout/fragment_cashier_more_items" />
+    <fragment
+        android:id="@+id/cashierReadyForPaymentFragment"
+        android:name="a.m.restaurant_automation.cashier.CashierReadyForPaymentFragment"
+        android:label="New Payment"
+        tools:layout="@layout/fragment_cashier_ready_for_payment" />
+</navigation>

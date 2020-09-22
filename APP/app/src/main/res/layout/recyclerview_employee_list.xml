@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_margin="11dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relativeEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageEmployee"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20sp"
+                app:srcCompat="@drawable/ic_person_outline_black_24dp"/>
+
+            <TextView
+                android:id="@+id/employeeFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FirstName"
+                android:layout_toRightOf="@+id/imageEmployee"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/employeeLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LastName"
+                android:layout_toRightOf="@+id/employeeFirstName"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/employeeEmail"
+                android:layout_below="@+id/employeeFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_toRightOf="@+id/imageEmployee"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/employeePhone"
+                android:layout_below="@+id/employeeEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone no"
+                android:layout_toRightOf="@+id/imageEmployee"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/employeeUserType"
+                android:layout_below="@+id/employeePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserType"
+                android:layout_toRightOf="@+id/imageEmployee"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+           <!-- <ImageView
+                android:id="@+id/imageUpadte"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_edit_black_24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"/>-->
+            <ImageView
+                android:id="@+id/imageDeleteEmployee"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_delete_forever_black_24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

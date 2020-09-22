@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_navigation_graph"
+    app:startDestination="@id/customerOverviewFragment">
+
+    <fragment
+        android:id="@+id/customerOverviewFragment"
+        android:name="a.m.restaurant_automation.customer.CustomerOverviewFragment"
+        android:label="Overview"
+        tools:layout="@layout/fragment_customer_overview" />
+    <fragment
+        android:id="@+id/customerMenuItemsFragment"
+        android:name="a.m.restaurant_automation.customer.CustomerMenuItemsFragment"
+        android:label="MenuItems"
+        tools:layout="@layout/fragment_customer_menu_items" />
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="a.m.restaurant_automation.customer.OrderFragment"
+        android:label="Your Orders"
+        tools:layout="@layout/fragment_order_history_customer" />
+    <fragment
+        android:id="@+id/moreOptionsFragment"
+        android:name="a.m.restaurant_automation.customer.MoreOptionsFragment"
+        android:label="More Options"
+        tools:layout="@layout/fragment_more_options" />
+    <fragment
+        android:id="@+id/customerTableViewFragment"
+        android:name="a.m.restaurant_automation.customer.CustomerTableViewFragment"
+        android:label="fragment_customer_table_view"
+        tools:layout="@layout/fragment_customer_table_view" />
+    <fragment
+        android:id="@+id/customerCatergoryItemNavigate"
+        android:name="a.m.restaurant_automation.customer.CustomerCatergoryItemNavigate"
+        android:label="fragment_customer_catergory_item_navigate"
+        tools:layout="@layout/fragment_customer_catergory_item_navigate" />
+    <fragment
+        android:id="@+id/cartFragmentCustomer"
+        android:name="a.m.restaurant_automation.customer.CartFragmentCustomer"
+        android:label="Your Cart"
+        tools:layout="@layout/fragment_cart_customer" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="a.m.restaurant_automation.customer.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+
+</navigation>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chef.ChefOrderHistoryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F2F8F8"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextFromDate"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#90000000"
+                    android:gravity="center"
+                    android:hint="From: yyyy-mm-dd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#90ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.041" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonFromDate"
+                    android:layout_width="30dp"
+                    android:layout_height="22sp"
+                    android:background="@drawable/calendar"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextFromDate"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.056"
+                    app:layout_constraintStart_toEndOf="@+id/editTextFromDate"
+                    app:layout_constraintTop_toTopOf="@+id/editTextFromDate"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <EditText
+                    android:id="@+id/editTextToDate"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#90000000"
+                    android:gravity="center"
+                    android:hint="To: yyyy-mm-dd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#90ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextFromDate"
+                    app:layout_constraintVertical_bias="0.111" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonToDate"
+                    android:layout_width="30dp"
+                    android:layout_height="22sp"
+                    android:background="@drawable/calendar"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextToDate"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.056"
+                    app:layout_constraintStart_toEndOf="@+id/editTextToDate"
+                    app:layout_constraintTop_toTopOf="@+id/editTextToDate"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/doneIB"
+                    android:layout_margin="10dp"
+                    android:text="Show Result"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_background_login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <!--    <ImageButton
+                        android:id="@+id/doneIB"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/ic_tick"
+                        android:backgroundTint="@android:color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.955"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" /> -->
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewChefOrderHistory"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewNoResult"
+            android:layout_width="wrap_content"
+            android:background="@drawable/mainbackground"
+            android:elevation="10dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include layout="@layout/progress_window" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Restaurant_Automation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="validation_require_email">Email id is require</string>
+    <string name="validation_pattern_email">Invalid Email address</string>
+    <string name="validation_require_name">Name is require</string>
+    <string name="validation_require_password">Password is require</string>
+    <string name="validation_length_password">Password must be at least 6 character long</string>
+    <string name="restaurant_name">Purple Bistro</string>
+    <string name="restaurant_rating">4.5</string>
+    <string name="restaurant_type">Restaurant | Multi Cuisine</string>
+    <string name="restaurant_timing">9am - 11pm</string>
+    <string name="restaurant_address">25 Parc, Montreal</string>
+    <string name="cusines">Indian, Italian, Mexican, Lebanese, Thai</string>
+    <string name="topDish">Top Dishes People Order</string>
+    <string name="Cashorcard">Cash or Card accepted</string>
+    <string name="restaurant_description">To create an environment where absolute guest satisfaction is our highest priority. We provide multi-cuisine service from all over the world.</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer.CartFragmentCustomer">
+
+    <TextView
+        android:id="@+id/emptyTextCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No data available"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radioGroupPaymentmethod"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/button_background_login"
+        android:layout_above="@+id/radioGroupPaymentmethod"/>
+
+   <RadioGroup
+       android:id="@+id/radioGroupPaymentmethod"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/checkoutButton"
+       android:weightSum="2"
+    android:orientation="horizontal"
+       android:layout_marginBottom="7dp"
+       >
+
+        <RadioButton
+            android:id="@+id/cardPayment_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Card Payment"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+
+            />
+
+        <RadioButton
+            android:id="@+id/cashPayment_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash Payment"
+            android:layout_weight="1"/>
+   </RadioGroup>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/button_background_login"
+        android:layout_above="@+id/checkoutButton"
+        android:layout_marginBottom="5dp"/>
+
+
+
+    <Button
+        android:background="@drawable/button_background_login"
+        android:id="@+id/checkoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Checkout"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chef_navigation_graph"
+    app:startDestination="@id/chefDashboard">
+
+    <fragment
+        android:id="@+id/chefDashboard"
+        android:name="a.m.restaurant_automation.chef.ChefDashboard"
+        android:label="DashBoard"
+        tools:layout="@layout/fragment_chef_dashboard" />
+    <fragment
+        android:id="@+id/chefOrderHistoryFragment"
+        android:name="a.m.restaurant_automation.chef.ChefOrderHistoryFragment"
+        android:label="Order History"
+        tools:layout="@layout/fragment_chef_order_history" />
+    <fragment
+        android:id="@+id/chefMoreItemsFragment"
+        android:name="a.m.restaurant_automation.chef.ChefMoreItemsFragment"
+        android:label="More Items"
+        tools:layout="@layout/fragment_chef_more_items" />
+
+
+</navigation>

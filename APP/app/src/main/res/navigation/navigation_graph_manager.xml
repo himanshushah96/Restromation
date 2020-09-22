@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph_manager"
+    app:startDestination="@id/managerDashboardFragment"
+    >
+    <fragment
+        android:id="@+id/managerDashboardFragment"
+        android:name="a.m.restaurant_automation.manager.ManagerDashboardFragment"
+        android:label="Manager Dashboard"
+        tools:layout="@layout/fragment_manager_dashboard" />
+    <fragment
+        android:id="@+id/menuItemFragment"
+        android:name="a.m.restaurant_automation.manager.EmployeeMenuItemsFragment"
+        android:label="fragment_appetizer"
+        tools:layout="@layout/fragment_employee_menu_items" />
+    <fragment
+        android:id="@+id/managerOrderHistoryFragment"
+        android:name="a.m.restaurant_automation.manager.ManagerOrderHistoryFragment"
+        android:label="Orders"
+        tools:layout="@layout/fragment_manager_order_history" />
+
+    <fragment
+        android:id="@+id/addEmployeeFragment"
+        android:name="a.m.restaurant_automation.manager.AddEmployeeFragment"
+        android:label="Add Employee"
+        tools:layout="@layout/fragment_add_employee" />
+    <fragment
+        android:id="@+id/employeeFragment"
+        android:name="a.m.restaurant_automation.manager.EmployeeFragment"
+        android:label="Employees"
+        tools:layout="@layout/fragment_employee" />
+
+    <fragment
+        android:id="@+id/employeeTableFragment"
+        android:name="a.m.restaurant_automation.manager.EmployeeTableFragment"
+        android:label="Tables"
+        tools:layout="@layout/fragment_employee_table" />
+    <fragment
+        android:id="@+id/managerMoreOptionsFragment"
+        android:name="a.m.restaurant_automation.manager.ManagerMoreOptionsFragment"
+        android:label="More Options"
+        tools:layout="@layout/fragment_manager_more_options" />
+
+    <fragment
+        android:id="@+id/chefOrderHistoryFragment"
+        android:name="a.m.restaurant_automation.chef.ChefOrderHistoryFragment"
+        android:label="Order History"
+        tools:layout="@layout/fragment_chef_order_history" />
+
+    <fragment
+        android:id="@+id/cashierDashboardFragment"
+        android:name="a.m.restaurant_automation.cashier.CashierDashboardFragment"
+        android:label="Completed Payments"
+        tools:layout="@layout/fragment_cashier_dashboard" />
+
+
+</navigation>

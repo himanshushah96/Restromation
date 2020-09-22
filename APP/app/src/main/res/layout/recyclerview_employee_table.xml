@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+    android:id="@+id/cardViewTable"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_margin="11dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView_tableNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Table Number"
+            android:textColor="@color/gray"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:id="@+id/textView_tableCapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Table Capacity"
+            android:layout_below="@+id/textView_tableNumber"
+            android:textColor="@color/gray"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:id="@+id/textView_tableStatus"
+            android:layout_below="@+id/textView_tableCapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="@color/gray"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/imageUpadte"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_edit_black_24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"/>
+
+        <ImageView
+            android:id="@+id/imageDelete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_delete_forever_black_24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
